@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main 
+
+media_folder: "images" # Where photos will be saved
+public_folder: "images"
+
+collections:
+  - name: "content"
+    label: "Content"
+    files:
+      - file: "index.html"
+        label: "Edit Website"
+        name: "index"
+        fields:
+          - {label: "Upcoming Event Name", name: "event_name", widget: "string"}
+          - {label: "Event Details", name: "event_loc", widget: "string"}
+          - {label: "About Text", name: "about_text", widget: "text"}
